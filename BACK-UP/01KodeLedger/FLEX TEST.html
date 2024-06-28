@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three Column Layout</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-around; /* Distribute space evenly between columns */
+        align-items: center; /* Center items vertically */
+        height: 100vh; /* Full height of the viewport */
+        background-color: #f0f0f0; /* Background color for contrast */
+      }
+
+      .column {
+        flex: 1; /* Each column takes up equal space */
+        text-align: center;
+      }
+
+      .image {
+        width: 80%; /* Adjust the size as needed */
+        height: auto; /* Maintain aspect ratio */
+      }
+
+      .heading {
+        margin-top: 20px; /* Space between image and heading */
+        font-size: 1.5rem; /* Adjust font size as needed */
+        color: #333; /* Text color */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <img
+          src="path/to/your/image1.jpg"
+          alt="Descriptive Alt Text"
+          class="image"
+        />
+        <h2 class="heading">Heading 1</h2>
+      </div>
+      <div class="column">
+        <img
+          src="path/to/your/image2.jpg"
+          alt="Descriptive Alt Text"
+          class="image"
+        />
+        <h2 class="heading">Heading 2</h2>
+      </div>
+      <div class="column">
+        <img
+          src="path/to/your/image3.jpg"
+          alt="Descriptive Alt Text"
+          class="image"
+        />
+        <h2 class="heading">Heading 3</h2>
+      </div>
+    </div>
+  </body>
+</html>

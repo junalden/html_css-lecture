@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #header {
+        background: transparent;
+        color: white;
+        width: 100%;
+        position: -webkit-sticky; /* For Safari */
+        position: sticky;
+        top: 0;
+        margin-top: -1rem;
+      }
+      /* .header-left {
+        padding: 5px 5px;
+        margin-top: -5px;
+      } */
+      .header-right {
+        float: right;
+        padding: 1em 1em;
+      }
+      .header-right a {
+        color: white;
+        text-decoration: none;
+        font-style: italic;
+        font-size: 20px;
+        padding: 20px 20px;
+      }
+      main {
+        padding: 25rem;
+        color: white;
+        text-align: center;
+        background: url("./images/home/showcase.jpg") no-repeat center
+          center/cover;
+        height: 100vb;
+        z-index: -1;
+      }
+
+      main h1 {
+        font-size: 50px;
+        font-style: italic;
+        margin-bottom: 20px;
+      }
+      main h2 {
+        font-size: 16px;
+      }
+
+      .read-more-main {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1em;
+        font-style: italic;
+        color: white;
+        background-color: #28a745;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .read-more-main:hover {
+        background-color: darkgreen;
+      }
+
+      /* main::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+      } */
+
+      .three-columns-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: #f4f4f4;
+      }
+
+      .column {
+        flex: 1;
+        max-width: 30%;
+        margin: 10px;
+
+        overflow: hidden;
+        text-align: center;
+      }
+
+      .column img {
+        width: 100%;
+        height: auto;
+      }
+
+      .column h2 {
+        font-size: 24px;
+        margin: 15px 0;
+        font-style: italic;
+      }
+
+      .column p {
+        font-size: 16px;
+        padding: 0 15px 15px;
+        font-style: italic;
+      }
+
+      .section {
+        display: flex;
+        width: 100%;
+        background-color: #28a745;
+      }
+
+      .left-side {
+        width: 50%;
+      }
+
+      .left-side img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .right-side {
+        width: 50%;
+        text-align: left;
+        padding-left: 30px;
+        font-style: italic;
+      }
+
+      .right-side h1 {
+        margin-top: 15em;
+        font-size: 1em;
+        font-weight: bold;
+        color: white;
+        font-style: italic;
+        margin-bottom: 5px;
+      }
+
+      .right-side h2 {
+        font-size: 1.5em;
+        color: white;
+        font-style: italic;
+        font-weight: 100;
+        margin-bottom: 20px;
+      }
+
+      .right-side p {
+        font-size: 1em;
+        color: white;
+        line-height: 1.6;
+        font-style: italic;
+      }
+
+      .read-more {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1em;
+        font-style: italic;
+        color: white;
+        background-color: #28a745;
+        border: 1px, white, solid;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .read-more-main span {
+        font-weight: bold;
+      }
+      .read-more:hover {
+        background-color: darkgreen;
+      }
+
+      .section-cases {
+        padding: 2em;
+        text-align: center;
+      }
+      .section-title {
+        font-size: 14px;
+        font-style: italic;
+        margin-bottom: 10px;
+      }
+      .section-subtitle {
+        font-size: 1.5em;
+        font-style: italic;
+        font-weight: 100;
+        margin-bottom: 20px;
+      }
+      .section-paragraph {
+        font-size: 1em;
+        font-style: italic;
+        margin-bottom: 30px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        max-width: 100%;
+      }
+      .image-grid img {
+        width: 100%;
+        height: auto;
+      }
+
+      .section-blog {
+        display: flex;
+        width: 100%;
+        background-color: #0284d0;
+      }
+
+      .blog-right-side {
+        width: 50%;
+      }
+
+      .blog-right-side img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .blog-left-side {
+        width: 50%;
+        text-align: left;
+        padding-left: 30px;
+        font-style: italic;
+      }
+
+      .blog-left-side h1 {
+        margin-top: 15em;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        font-style: italic;
+      }
+
+      .blog-left-side h2 {
+        font-size: 1.5em;
+        color: white;
+        font-style: italic;
+      }
+
+      .blog-left-side p {
+        font-size: 1em;
+        color: white;
+        line-height: 1.6;
+        font-style: italic;
+      }
+
+      .section-team {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+      }
+
+      .image-grid-team {
+        display: flex;
+
+        flex-shrink: 0;
+        max-width: 100%;
+        gap: 20px;
+        padding-left: 20px;
+      }
+      .team-column {
+        flex: 1;
+        text-align: center;
+      }
+
+      .image-grid-team img {
+        width: 80%;
+        height: auto;
+        border-radius: 50%;
+      }
+
+      .contact {
+        display: flex;
+        width: 100%;
+      }
+
+      .contact-left-side {
+        width: 50%;
+      }
+      .contact-left-side img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .contact-right-side {
+        background: #f4f4f4;
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 50%;
+      }
+
+      .form-group {
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button[type="submit"] {
+        padding: 10px 20px;
+        width: 100%;
+        background-color: green;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header" class="header-left">
+      <a href="#default" class="logo">CompanyLogo</a>
+      <div class="header-right">
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+        <a href="#cases">Cases</a>
+        <a href="#about">Blog</a>
+
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+    <main>
+      <h1>The Sky Is The Limit</h1>
+      <h2>We provide world class financial assitance</h2>
+      <p></p>
+      <a href="#" class="read-more-main"> <span>></span> Read More</a>
+    </main>
+
+    <section class="three-columns-section">
+      <div class="column">
+        <img src="./images/" alt="Image 1" />
+        <h2>Investment Banking</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+          accusantium nisi repellat nemo? Sequi, omnis fugiat porro quidem
+          voluptatem nihil?
+        </p>
+      </div>
+      <div class="column">
+        <img src="image2.jpg" alt="Image 2" />
+        <h2>Portfolio Manager</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit
+          amet accumsan tortor.
+        </p>
+      </div>
+      <div class="column">
+        <img src="image3.jpg" alt="Image 3" />
+        <h2>Tax and Custodial</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit
+          amet accumsan tortor.
+        </p>
+      </div>
+    </section>
+
+    <div class="section">
+      <div class="left-side">
+        <img src="./images/home/people.jpg" />
+      </div>
+      <div class="right-side">
+        <h1>What are you looking for</h1>
+        <h2>We provide bespoke solutions</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sequi
+          velit beatae dolor nihil totam amet recusandae sapiente iure optio
+          saepe perspiciatis maxime. Numquam vero voluptate perferendis
+          doloremque veniam maxime!
+        </p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+
+    <div id="cases">
+      <section class="section-cases">
+        <h1 class="section-title">This is what we do</h1>
+        <h2 class="section-subtitle">Business Cases</h2>
+        <p class="section-paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+          consequuntur assumenda nisi omnis blanditiis optio!
+        </p>
+        <div class="image-grid">
+          <img src="./images/cases/cases1.jpg" alt="Image 1" />
+          <img src="./images/cases/cases2.jpg" alt="Image 2" />
+          <img src="./images/cases/cases3.jpg" alt="Image 3" />
+          <img src="./images/cases/cases4.jpg" alt="Image 4" />
+          <img src="./images/cases/cases5.jpg" alt="Image 5" />
+          <img src="./images/cases/cases6.jpg" alt="Image 6" />
+          <img src="./images/cases/cases7.jpg" alt="Image 7" />
+          <img src="./images/cases/cases8.jpg" alt="Image 8" />
+        </div>
+      </section>
+    </div>
+
+    <div class="section-blog">
+      <div class="blog-left-side">
+        <h1>What are you looking for</h1>
+        <h2>We provide bespoke solutions</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sequi
+          velit beatae dolor nihil totam amet recusandae sapiente iure optio
+          saepe perspiciatis maxime. Numquam vero voluptate perferendis
+          doloremque veniam maxime!
+        </p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+      <div class="blog-right-side">
+        <img src="./images/home/blog.jpg" />
+      </div>
+    </div>
+
+    <section class="section-team">
+      <h1 class="section-title">Who we are</h1>
+      <h2 class="section-subtitle">Our Professional Team</h2>
+      <p class="section-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+      </p>
+      <div class="image-grid-team">
+        <div class="team-column">
+          <img src="./images/team/person1.jpg" alt="Image 1" />
+          <div class="team-info">
+            <h3>Alden Rye</h3>
+            <h4>President</h4>
+          </div>
+        </div>
+        <div class="team-column">
+          <img src="./images/team/person2.jpg" alt="Image 2" />
+          <div class="team-info">
+            <h3>Catrice Dominique</h3>
+            <h4>Vice President</h4>
+          </div>
+        </div>
+        <div class="team-column">
+          <img src="./images/team/person3.jpg" alt="Image 3" />
+          <div class="team-info">
+            <h3>Benjamin Cruz</h3>
+            <h4>Marketing Head</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="contact">
+      <div class="contact-left-side">
+        <img src="./images/home/contact.jpg" />
+      </div>
+      <div class="contact-right-side">
+        <h2>Contact Us</h2>
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Your Name" />
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+          />
+        </div>
+        <div class="form-group">
+          <input type="tel" id="phone" name="phone" placeholder="Your Phone" />
+        </div>
+        <button type="submit">Send</button>
+      </div>
+    </div>
+  </body>
+</html>

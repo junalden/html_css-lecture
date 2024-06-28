@@ -9,31 +9,36 @@
         font-family: Arial, Helvetica, sans-serif;
       }
 
+      /* Navbar */
       .navbar {
         list-style: none;
         margin: 0;
         padding: 0;
-        background: #4c4ca0;
+        background: #4c6ca0;
         border-radius: 5px;
         overflow: auto;
       }
-      .navbar li {
+
+      .navbar li a {
         float: left;
       }
+
       .navbar li a {
         display: block;
         color: #fff;
         text-decoration: none;
         padding: 15px 20px;
       }
+
       .navbar li a:hover {
-        background-color: grey;
-        color: white;
+        background-color: #446190;
+        color: #f4f4f4;
       }
 
+      /* Side Menu  */
       .side-menu {
         list-style: none;
-        border: 1px black solid;
+        border: 1px #ddd solid;
         border-radius: 10px;
         width: 150px;
         padding: 20px;
@@ -41,15 +46,15 @@
 
       .side-menu li {
         font-size: 18px;
-        line-height: 2em;
-        border-bottom: 1px solid blue;
-      }
-      .side-menu li a {
-        text-decoration: none;
-        color: black;
+        line-height: 2.4em;
+        border-bottom: dotted 1px #ddd;
       }
 
-      /* pseudo selector  */
+      .side-menu li a {
+        text-decoration: none;
+        color: #333;
+      }
+
       .side-menu li:last-child {
         border: none;
       }
@@ -69,7 +74,7 @@
       <li><a href="#">About</a></li>
       <li><a href="#">Services</a></li>
       <li><a href="#">Contact</a></li>
-      <li><a href="#">Eme lang</a></li>
+      <li><a href="#">Eme</a></li>
     </ul>
   </body>
 </html>

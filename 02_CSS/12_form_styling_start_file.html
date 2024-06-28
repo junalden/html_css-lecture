@@ -11,132 +11,80 @@
     />
     <style>
       * {
-        /*
-        -May want to add "border-box for "box-sizing so padding does not affect width
-        -Reset margin and padding
-       */
+        box-sizing: border-box;
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
       }
 
       body {
-        /*
-          -Background color is #344a72
-        */
         font-family: "Raleway", sans-serif;
         background: #344a72;
-        text-align: center;
-        padding: 20px 20px;
+        color: #fff;
+        line-height: 1.8;
       }
 
       a {
-        /*
-        Underlined links are ugly :)
-       */
         text-decoration: none;
       }
 
       #container {
-        background: white;
-        max-width: 300px;
-        margin: 20px auto;
-
-        /*
-        -Remember, margin: auto on left and right will center a block element
-        -I would also set a "max-width" for responsiveness
-        -May want to add some padding
-        */
+        margin: 30px auto;
+        max-width: 400px;
+        padding: 20px;
       }
 
       .form-wrap {
-        /*
-          This is the white area around the form and heading, etc
-        */
-        padding: 12px 12px;
+        background: #fff;
+        color: #333;
+        padding: 15px 25px;
       }
 
       .form-wrap h1,
       .form-wrap p {
-        /*
-          May want to center these
-        */
+        text-align: center;
       }
 
       .form-wrap .form-group {
-        /*
-          Each label, input is wrapped in .form-group
-        */
-        padding: 15px;
-        text-align: left;
+        margin-top: 15px;
       }
 
       .form-wrap .form-group label {
-        /*
-          Label should be turned into a block element
-        */
-        display: inline-block;
-        width: 300px;
-        margin-bottom: 4px;
+        display: block;
+        color: #666;
       }
 
       .form-wrap .form-group input {
-        /*
-          Inputs should reach accross the .form-wrap 100% and have some padding
-        */
-        float: right;
-        display: inline;
         width: 100%;
-        padding: 5px;
+        padding: 10px;
+        border: #ddd 1px solid;
         border-radius: 5px;
-        border-color: gray;
-        border-width: 1px;
       }
 
       .form-wrap button {
-        /*
-          Button should wrap accross 100% and display as block
-          Background color for button is #49c1a2
-        */
         display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
         background: #49c1a2;
-        color: white;
-        width: 246px;
-        margin: 30px 15px 30px 15px;
-        height: 30px;
+        color: #fff;
+        cursor: pointer;
       }
 
       .form-wrap button:hover {
-        /*
-          Hover background color for button is #37a08e
-        */
         background: #37a08e;
       }
 
       .form-wrap .bottom-text {
-        /*
-          Bottom text is smaller
-        */
-        font-size: 12px;
-        line-height: 1.6em;
-        padding: 10px 10px;
+        font-size: 13px;
+        margin-top: 20px;
       }
 
       footer {
-        background: #344a72;
         text-align: center;
-        color: white;
-        padding-top: 20px;
-        /*
-        Should be centered
-       */
+        margin-top: 10px;
       }
 
       footer a {
-        /*
-          Footer link color is #49c1a2
-        */
-        text-decoration: none;
         color: #49c1a2;
       }
     </style>
@@ -149,10 +97,8 @@
         <form>
           <div class="form-group">
             <label for="first-name">First Name</label>
-
             <input type="text" name="firstName" id="first-name" />
           </div>
-
           <div class="form-group">
             <label for="last-name">Last Name</label>
             <input type="text" name="lastName" id="last-name" />
@@ -177,7 +123,6 @@
           </p>
         </form>
       </div>
-
       <footer>
         <p>Already have an account? <a href="#">Login Here</a></p>
       </footer>

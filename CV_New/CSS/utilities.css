@@ -1,0 +1,61 @@
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 1rem;
+}
+
+/* .project-card {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h2 {
+  margin-top: 0;
+}
+
+.project-card p {
+  margin-bottom: 0;
+}
+*/
+.project-card img {
+  width: 100%;
+}
+
+.btn {
+  color: black;
+  padding: 0.5rem;
+  border: none;
+}
+.moreBtn {
+  color: black;
+
+  border: none;
+}
+.btnLarge {
+  color: black;
+  padding: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+.btn-light {
+  background-color: var(--light-color);
+}
+.btn-light:hover {
+  background-color: var(--primary-color);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}

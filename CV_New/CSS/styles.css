@@ -1,0 +1,410 @@
+/* NOTES */
+/* SHADOWS - https://www.joshwcomeau.com/css/designing-shadows/ */
+
+:root {
+  --primary-color: #ffc107;
+  --secondary-color: #1f1e24;
+
+  --light-color: #ffffff;
+  --dark-color: #100e17;
+  --max-width: 1100px;
+}
+
+.category {
+  --sports-color: #f99500;
+  --ent-color: #a66bbe;
+  --tech-color: #009cff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #100e17;
+  color: white;
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+/* ---------------------------------------------------------------------- */
+.sidebar {
+  position: fixed;
+  top: 6.7rem;
+  left: 16rem;
+
+  width: 60px;
+  background-color: #ffc107;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  display: block;
+  font-size: 1.6rem;
+  text-align: center;
+  /* Border sa baba pangit  */
+  /* border-bottom: #333 solid 1px; */
+}
+
+.sidebar ul li a.active {
+  background-color: white;
+  color: #333;
+}
+/* ----------------------------------------------------------------------------- */
+
+/*------------------------------ MAIN SECTION-----------------------------------  */
+#main-section .container {
+  width: 60%;
+  margin: auto;
+}
+
+.box {
+  /* border: white solid 1px; */
+}
+.main {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+}
+
+.image {
+  padding-top: 3rem;
+}
+
+.image img {
+  padding-top: 3rem;
+  width: 300px;
+}
+
+.name-title {
+  text-align: center;
+  padding-top: 8rem;
+}
+
+.name-title p {
+  padding-top: 0.3rem;
+}
+
+.fullname {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #ffc107;
+}
+
+.skills {
+  padding: 1rem 1rem;
+}
+
+.skills ul {
+  padding-left: 20px;
+}
+
+.skills h2 {
+  padding-bottom: 1.5rem;
+}
+
+.about-me h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* ---- icon box ---  */
+
+/* added stats area above */
+.stats {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  display: flex;
+}
+.stats h2 {
+  padding-right: 2rem;
+}
+
+.iconrow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 700px;
+  padding: 1rem 1rem;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.iconbox img {
+  width: 100%;
+}
+.iconbox .sap {
+  width: 200%;
+  margin-right: 3rem;
+}
+.iconbox .sql {
+  margin-left: 1.8rem;
+}
+.iconbox .bi {
+  margin-top: 0.6rem;
+  width: 120%;
+}
+.iconbox .powerapps {
+  width: 120%;
+}
+
+/* ----- END OF ICONBOX ----------- */
+
+/* Employemnt History */
+#history .container {
+  width: 60%;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+#history h2 {
+  padding: 1.5rem;
+}
+
+#history p {
+  line-height: 1.5rem;
+}
+
+.work-item {
+  background: #1f1e24;
+  padding: 2rem 2rem;
+  margin-bottom: 1rem;
+  /* border-bottom: gray solid 1px; */
+}
+
+/* .job-title {
+    width: 30%;
+    background: #ffc107;
+    padding: 1rem;
+    color: #555;
+    border-radius: 50px;
+  } */
+
+.job-title {
+  font-size: 1.5rem;
+  padding: 0.75rem;
+}
+.try {
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  color: #ffc107;
+  background: #1f1e24;
+}
+.lol {
+  background: #ffc107;
+  color: black;
+  padding: 10px 10px;
+}
+
+.company {
+  color: #ffc107;
+  padding: 0.5rem 1rem;
+}
+.company-address {
+  padding: 0.2rem 1rem;
+}
+.employment-dates {
+  padding: 0.2rem 1rem;
+  color: #ffc107;
+  font-weight: 300;
+}
+.job-description {
+  padding: 0.2rem 1rem;
+}
+
+/* ---------------------- PROJECTS -------------------------- */
+#projects .project-card {
+  background-color: var(--secondary-color);
+}
+#projects h3 {
+  padding: 0.5rem 0.5rem;
+}
+#projects p {
+  padding: 0.5rem 0.5rem;
+  padding-bottom: 1rem;
+}
+
+#projects .project-cat {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+#projects button {
+  margin-right: 0.5rem;
+}
+#projects h2 {
+  margin-top: 4rem;
+}
+
+/* -------------END OF PROJECT SECTION -------------------------- */
+
+/* ---------------------- recommendations -------------------------- */
+
+#recommendations {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+#recommendations h1 {
+  text-align: center;
+}
+
+#recommendations .flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+#recommendations .reco-box {
+  background-color: #1f1e24;
+  margin: 1rem 1rem;
+  padding: 1rem 1rem;
+}
+
+#recommendations .flex-items img {
+  width: 75%;
+}
+
+#recommendations .reco-details {
+  background-color: #ffc107;
+  border-radius: 2px;
+  margin-top: 1rem;
+}
+
+#recommendations h3 {
+  color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+}
+#recommendations h4 {
+  color: black;
+  font-style: italic;
+}
+#recommendations p {
+  color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#recommendations .reco-box img {
+  border-radius: 50%;
+}
+
+/* -----------------------end of recommendations ---------------------- */
+
+/* --------------------------contact-------------------------------- */
+#contact {
+  margin-bottom: 5rem;
+}
+
+#contact .form {
+  background-color: var(--secondary-color);
+  margin: 3rem 3rem;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .form h2 {
+  padding: 1rem 1rem;
+  text-align: center;
+}
+#contact .form h3 {
+  padding: 1rem 1rem;
+  text-align: center;
+  font-weight: lighter;
+}
+
+#contact .form label {
+  padding: 1rem 0.5rem;
+}
+#contact .form input {
+  margin-left: 1rem;
+  background-color: #2c2a33;
+  color: var(--light-color);
+  line-height: 2rem;
+  border-radius: 2px;
+  border: transparent solid 1px;
+}
+#contact .form #message {
+  margin-left: 1rem;
+  background-color: #2c2a33;
+  color: var(--light-color);
+  line-height: 8rem;
+  border-radius: 2px;
+  border: transparent solid 1px;
+}
+
+#contact .form a {
+  margin-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+  text-align: center;
+  text-decoration: none;
+}
+/* ------------------------end of contact-------------------------------- */
+
+/* FOOTER  */
+.footer {
+  text-align: center;
+}
+
+.footer .social {
+  padding: 1rem;
+}
+
+.footer a {
+  color: #555;
+  padding: 10px;
+}
+.footer p {
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+/* NEED TO STUDY */
+/* SAW ON */
+/* https://maha-cv-resume-bootstrap.vercel.app/home-one.html */
+html {
+  text-rendering: optimizeLegibility;
+}
+
+/* NEED TO STUDY */
+/* <!-- expanding readmore button -->
+<!-- https://www.w3schools.com/howto/howto_js_read_more.asp --> */
+#more {
+  display: none;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
