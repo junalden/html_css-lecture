@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube API Example</title>
+  </head>
+  <body>
+    <div id="video-details"></div>
+
+    <script>
+      const API_KEY = "YOUR_YOUTUBE_API_KEY";
+      const VIDEO_ID = "dQw4w9WgXcQ"; // Replace with your video ID
+
+      async function getVideoDetails() {
+        const url = `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${VIDEO_ID}&key=${API_KEY}`;
+        const response = await fetch(url);
+        const data = await response.json();
+
+        if (data.items.length > 0) {
+          const videoDetails = data.items[0].snippet;
+          document.getElementById("video-details").innerHTML = `
+                    <h2>${videoDetails.title}</h2>
+                    <p>${videoDetails.description}</p>
+                `;
+        } else {
+          document.getElementById("video-details").innerHTML =
+            "No video found.";
+        }
+      }
+
+      getVideoDetails();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini AI Chatbot</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      #chat-container {
+        width: 300px;
+        margin: 50px auto;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+      }
+      #messages {
+        height: 200px;
+        overflow-y: scroll;
+        border: 1px solid #eee;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .message {
+        margin: 5px 0;
+      }
+      .user-message {
+        text-align: right;
+        color: blue;
+      }
+      .ai-message {
+        text-align: left;
+        color: green;
+      }
+      #message-input {
+        width: 80%;
+        padding: 5px;
+      }
+      #send-btn {
+        width: 15%;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chat-container">
+      <h2>Gemini AI Chatbot</h2>
+      <div id="messages"></div>
+      <input type="text" id="message-input" placeholder="Type a message..." />
+      <button id="send-btn">Send</button>
+    </div>
+
+    <script>
+      const messagesDiv = document.getElementById("messages");
+      const messageInput = document.getElementById("message-input");
+      const sendBtn = document.getElementById("send-btn");
+
+      sendBtn.addEventListener("click", async () => {
+        const userMessage = messageInput.value.trim();
+        if (userMessage) {
+          addMessage("user", userMessage);
+          messageInput.value = "";
+
+          const aiMessage = await generateAIResponse(userMessage); // Fetch AI response from Gemini API
+          addMessage("ai", aiMessage);
+        }
+      });
+
+      function addMessage(sender, message) {
+        const messageElement = document.createElement("div");
+        messageElement.classList.add("message");
+        messageElement.classList.add(
+          sender === "user" ? "user-message" : "ai-message"
+        );
+        messageElement.textContent = message;
+        messagesDiv.appendChild(messageElement);
+        messagesDiv.scrollTop = messagesDiv.scrollHeight; // Scroll to bottom
+      }
+
+      async function generateAIResponse(userMessage) {
+        const apiKey = "AIzaSyATdOo-sWAQqVPmdaf8nHZvUhmn8Sc3aGw"; // Replace with your Gemini API key
+        const apiEndpoint =
+          "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent";
+
+        try {
+          const response = await fetch(`${apiEndpoint}?key=${apiKey}`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              contents: [
+                {
+                  parts: [
+                    {
+                      text: userMessage,
+                    },
+                  ],
+                },
+              ],
+            }),
+          });
+
+          const data = await response.json();
+          console.log("API Response:", data); // Log the entire response for debugging
+
+          if (data && data.candidates && data.candidates.length > 0) {
+            const candidate = data.candidates[0];
+            if (
+              candidate &&
+              candidate.content &&
+              candidate.content.parts &&
+              candidate.content.parts.length > 0
+            ) {
+              return candidate.content.parts[0].text.trim();
+            }
+          }
+          return "No response from the AI.";
+        } catch (error) {
+          console.error("Error:", error);
+          return "An error occurred while processing your request.";
+        }
+      }
+    </script>
+  </body>
+</html>

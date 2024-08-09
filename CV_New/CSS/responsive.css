@@ -1,0 +1,178 @@
+@media (max-width: 1620px) {
+  .sidebar {
+    position: fixed;
+    top: 6.7rem;
+    left: 10rem;
+
+    width: 60px;
+    background-color: #ffc107;
+  }
+}
+
+@media (max-width: 960px) {
+  .sidebar {
+    left: 1rem;
+    position: fixed;
+  }
+
+  #main-section .container {
+    max-width: 80%;
+  }
+  .main {
+    display: block;
+  }
+
+  .image {
+    text-align: center;
+  }
+
+  /* https://www.geeksforgeeks.org/how-to-use-line-break-in-css/ */
+  .lol::after,
+  .try::after {
+    content: "\A";
+    white-space: pre;
+    display: block;
+  }
+
+  .try {
+    font-size: 1.25rem;
+
+    color: #ffc107;
+    background: #1f1e24;
+  }
+  .lol {
+    background: #ffc107;
+    color: black;
+    padding: 1px 1px;
+    margin-bottom: 0.5rem;
+  }
+
+  .work-item h3 {
+  }
+
+  .cards {
+    display: block;
+  }
+
+  .project-card {
+    margin-bottom: 1rem;
+  }
+
+  #recommendations .flex-items {
+    display: block;
+  }
+}
+
+@media (max-width: 393px) {
+  .sidebar {
+    display: none;
+    left: 0.5rem;
+    position: fixed;
+    top: 1rem;
+  }
+  .container {
+    width: 95%;
+  }
+
+  #main-section .container {
+    width: 96% !important;
+    /* margin: auto; */
+  }
+  .main {
+    display: block;
+  }
+
+  .image {
+    text-align: center;
+  }
+  .image img {
+    width: 90%;
+    padding-top: 1rem;
+  }
+
+  .name-title {
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .fullname {
+    font-size: 2rem;
+  }
+
+  .stats {
+    margin-top: 0%;
+    text-align: center;
+    margin-left: 0%;
+    display: block;
+  }
+
+  .stats h2 {
+    padding-right: 0rem;
+
+    font-size: 1rem;
+  }
+
+  /* ICON BAR  */
+  .iconrow {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    padding: 0% 0%;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  /* 
+  .iconbox img {
+    width: 30%;
+  }*/
+  .iconbox .sap {
+    margin-right: 0.3rem;
+  }
+
+  .stats h2:nth-child(3) {
+    display: none;
+  }
+  .stats h2:nth-child(2) {
+    display: none;
+  }
+
+  /* https://www.geeksforgeeks.org/how-to-use-line-break-in-css/ */
+  .lol::after,
+  .try::after {
+    content: "\A";
+    white-space: pre;
+    display: block;
+    line-height: 0.1rem;
+  }
+
+  .try {
+    font-size: 1.25rem;
+    padding: 0px;
+    color: #ffc107;
+    background: #1f1e24;
+  }
+  .lol {
+    background: #ffc107;
+    padding: 0px 0px;
+    color: black;
+    margin-bottom: -1rem;
+  }
+
+  .work-item {
+    padding: 0.5rem 0.5rem;
+  }
+  .work-item h3 {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .cards {
+    display: block;
+  }
+
+  .project-card {
+    margin-bottom: 1rem;
+  }
+
+  #recommendations .flex-items {
+    display: block;
+  }
+}

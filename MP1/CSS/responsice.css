@@ -1,0 +1,27 @@
+@media (max-width: 1620px) {
+  .sidebar {
+    position: fixed;
+    top: 6.7rem;
+    left: 10rem;
+
+    width: 60px;
+    background-color: #ffc107;
+  }
+}
+@media (max-width: 960px) {
+  .sidebar {
+    left: 0.5rem;
+    top: 0.5rem;
+    position: fixed;
+    z-index: 99999;
+  }
+}
+
+@media (max-width: 393px) {
+  .sidebar {
+    display: none;
+    left: 0.5rem;
+    position: fixed;
+    top: 1rem;
+  }
+}

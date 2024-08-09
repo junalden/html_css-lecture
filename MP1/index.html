@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/lightbox.min.css" />
+    <link rel="stylesheet" href="./CSS/responsice.css" />
+    <title>Jun Alden Bondoc</title>
+  </head>
+  <body>
+
+
+
+    
+    <!-- SIDEBAR INSPIRED BY -->
+    <!-- https://www.portotheme.com/wordpress/porto/resume/ -->
+    <nav class="sidebar">
+      <ul>
+        <li><a href="#about" data-toggle="tooltip" data-placement="right" title="Home"><i class="fas fa-home"></i></a></li>
+        <li><a href="#skills"data-toggle="tooltip" data-placement="right" title="Skills"><i class="fas fa-book"></i></a></li>
+        <li><a href="#history"data-toggle="tooltip" data-placement="right" title="Work History"><i class="fas fa-eye"></i></a></li>
+        <li><a href="#projects"data-toggle="tooltip" data-placement="right" title="Projects"><i class="far fa-gem"></i></a></li>
+        <li><a href="#recommendations"data-toggle="tooltip" data-placement="right" title="Recommendations"><i class="fas fa-people-arrows"></i></a></li>
+        <li><a href="#contact"data-toggle="tooltip" data-placement="right" title="Contact"><i class="fa fa-envelope"></i></a></li>
+       <!-- added option to download PDF -->
+        <!-- not working at the moment, need research -->
+        <li><a href="./Docs/Jun Alden Bondoc Resume 030524_3.pdf" target="_blank"><i class="far fa-file-pdf"data-toggle="tooltip" data-placement="right" title="Download CV"></i></a></li>
+       
+      </ul>
+    </nav>
+
+    <!-- https://www.w3schools.com/bootstrap/bootstrap_tooltip.asp# -->
+
+
+
+
+
+
+
+    <section id="about"></section>
+    <div id="about-me">
+      <div class="container">
+        <div class="row my-5 row-gap-3 ps-2">
+          <div class="col-md-4 px-2 pt-5">
+            <div class="card mx-5 px-3 border-0 bg-transparent">
+              <img src="./Images/AI-PIC.jpeg" alt=""/>
+            </div>
+            <div class="px-4"><h5 class="cert text-light text-center mt-2">SAP Certified Consultant**</h5>
+            <h5 class="cert text-light text-center mt-2">MSTC Certified Power BI and Data Analytics Professional</h5>
+            </div>
+            
+          </div>
+          <div class="col-md-8  pt-5">
+            <div class="main-details text-center text-light pt-5">
+              <h1><strong>Jun Alden Bondoc</strong></h1>
+              <h4 class="text-warning">
+                <strong>Current: SAP Application Support</strong>
+              </h4>
+
+              <p class="mt-3">
+                <i class="fas fa-envelope fa-fw"></i> junalden@outlook.com
+                <br /><i class="fas fa-mobile fa-fw"></i> 09539917479 <br /><i
+                  class="fas fa-map-marker fa-fw"
+                ></i>
+                Bacolor Pampanga
+              </p>
+            </div>
+
+            <div class="about-me mt-5 px-2 text-light">
+              <h4> <strong>ABOUT ME</strong></h4>
+              <p>
+                A programmer and report writer for over nine years, specializing
+                in SAP Business One and in-house ERP systems. I've worked as an
+                SAP programmer/administrator for foreign-owned manufacturing
+                companies in the Philippines.
+
+                <br />
+                
+                <br />
+
+                Now, I'm diving into full stack development at KodeGo. This
+                program will give me the skills I need to become a well-rounded
+                web developer. I'm getting hands-on experience with both
+                front-end and back-end technologies, which is crucial for
+                building complete web applications. My goal is to use
+                <span id="dots">...</span>
+                <span id="more"
+                  >these new skills to create innovative and efficient web
+                  solutions. Plus, with my background in SAP, I plan to develop
+                  custom solutions that optimize business processes. Combining
+                  my SAP experience with my full
+                  <!-- expanding readmore button -->
+                  <!-- https://www.w3schools.com/howto/howto_js_read_more.asp -->
+                  stack development skills opens up so many possibilities. I see
+                  myself creating web applications that not only streamline
+                  operations but also provide great user experiences for
+                  businesses. This blend of SAP's strength and the flexibility
+                  of modern web tech allows me to tackle specific business needs
+                  effectively.</span
+                >
+                <button
+                  onclick="myFunction()"
+                  id="moreBtn"
+                  class="moreBtn btn-primary"
+                >
+                  Read more
+                </button>
+              </p>
+             
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="highlights ms-5 text-light mt-3">
+              <h5 ><Br></h5>
+              
+              <ul>
+                <!-- <li>SAP Business One</li>
+                <ul>
+                  <li>Server Preparation, Blueprinting</li>
+                  <li>Documentation, & Support</li>
+                </ul> -->
+                
+                <li>DATA MANAGEMENT & DATA ANALYTICS BOOTCAMP (JULY 2024)</li>
+                 <li>SAP CONSULTANT - FASHION INTERIORS (ONGOING)</li>
+                <li>PROJECT CONSULTANT - CARE FOR CHILDREN FOUNDATION (ONGOING)</li>
+                <li>UI & UX Design - Adobe XD Workshop (JULY 2022)</li>
+                <li>AGILE SCRUM FUNDAMENTALS (JAN 2022)</li>
+               <li>SAP B1 & PayFactor - (JAN 2022)</li>
+                <li>SAP B1 AND BUSINESS ON CLOUD - (June 2017)</li>
+       
+              </ul>
+            </div>
+          </div>
+          
+
+          <div class="col-md-8 text-light">
+            
+            <div class ="row ms-2 pb-4"><section id="skills"></section>
+                <div class="col-md-5 text-center"><h4> <span class="text-warning"><strong>9 YRS</strong> </span><strong>| Work Experience</strong></h4></div>
+                <div class="col-md-3 text-center"><h4> <span class="text-warning"><strong>31 </strong></span><strong>| Projects</strong></h4></div>
+                <div class="col-md-3 text-center"><h4> <span class="text-warning"><strong>18</strong></span><strong>| SAP Set-ups</strong></h4></div>
+                    
+                
+            
+
+              </div>
+              
+              <div class="row row-gap-3 mt-3 px-5 pb-5">
+             
+            
+              <div class="col-md-2 pt-3 mt-3">
+                <div class="skill-img-box"><img src="./Images/icons/sap.png" alt="SAP Business One" class="img-fluid skill-img">
+                <p class="skillname text-center">SAP B1</p></div>
+                
+              </div>
+              
+             
+              <div class="col-md-2 pt-3 mt-3">
+                <div class="skill-img-box"><img src="./Images/icons/sql.png" alt="SAP Business One" class="img-fluid skill-img">
+                <p class="skillname text-center">MS SQL Server</p></div>
+                
+              </div>
+              
+             
+              <div class="col-md-2 pt-3 mt-3">
+                <div class="skill-img-box"><img src="./Images/icons/crystal.png" alt="SAP Business One" class="img-fluid skill-img">
+                <p class="skillname text-center">Crystal Reports</p></div>
+                
+              </div>
+              
+             
+              <div class="col-md-2 pt-3 mt-3">
+                <div class="skill-img-box"><img src="./Images/icons/vb.png" alt="SAP Business One" class="img-fluid skill-img">
+                <p class="skillname text-center">VB.Net</p></div>
+                
+              </div>
+              
+             
+              <div class="col-md-2 pt-3 mt-3">
+                <div class="skill-img-box"><img src="./Images/icons/powerapps.png" alt="SAP Business One" class="img-fluid skill-img">
+                <p class="skillname text-center">PowerApps</p></div>
+                
+              </div>
+              
+             
+              <div class="col-md-2 pt-3 mt-3">
+                <div class="skill-img-box"><img src="./Images/icons/Microsoft-Power-BI-Logo-2016.png" alt="SAP Business One" class="img-fluid skill-img">
+                <p class="skillname text-center">Power BI</p></div>
+                
+              </div>
+              
+             
+              <div class="col-md-2 pt-3 mt-3 ">
+                <div class="skill-img-box"><img src="./Images/icons/wordpress.png" alt="SAP Business One" class="img-fluid skill-img">
+                <p class="skillname text-center">WordPress</p></div>
+                
+              </div>
+             
+              <div class="col-md-2 pt-3 mt-3 ">
+                <div class="skill-img-box"><img src="./Images/icons/woo.png" alt="SAP Business One" class="img-fluid skill-img">
+                <p class="skillname text-center">WooCommerce</p></div>
+                
+              </div>
+             
+              <div class="col-md-2 pt-3 mt-3 ">
+                <div class="skill-img-box"><img src="./Images/icons/html.png" alt="SAP Business One" class="img-fluid skill-img">
+                <p class="skillname text-center">HTML</p></div>
+                
+              </div>
+             
+              <div class="col-md-2 pt-3 mt-3 ">
+                <div class="skill-img-box"><img src="./Images/icons/css.png" alt="SAP Business One" class="img-fluid skill-img">
+                <p class="skillname text-center">CSS</p></div>
+                
+              </div>
+             
+              <div class="col-md-2 pt-3 mt-3 ">
+                <div class="skill-img-box"><img src="./Images/icons/js.png" alt="SAP Business One" class="img-fluid skill-img">
+                <p class="skillname text-center">Javascript</p></div>
+                
+              </div>
+             
+              <div class="col-md-2 pt-3 mt-3 ">
+                <div class="skill-img-box"><img src="./Images/icons/excel.png" alt="SAP Business One" class="img-fluid skill-img">
+                <p class="skillname text-center">MS Excel/VBA</p></div>
+                
+              </div>
+              
+             
+              
+
+            
+            
+            </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <section id="history">
+      <div class="container px-5 my-5">
+        <h4 class="text-light my-4"><strong>EMPLOYMENT HISTORY</strong></h4>
+
+        <div class="work-card px-3 py-4 my-3">
+          <div class="row ps-3">
+            <div class="col text-light">
+              <h4>
+                <span class="bg-warning text-black px-2 py-2 lh-lg"
+                  ><strong>SAP APPLICATION SUPPORT</strong></span
+                >
+                <span class="text-warning"
+                  ><strong>Sabre Information Services Pte Ltd</strong></span
+                >
+              </h4>
+              <p>
+                <strong> 237 Alexandra Rd, #06-06, Singapore 159929</strong>
+              </p>
+              <p > <span class="text-warning lh-1">April 2023 to Present (1 year & 2 months)</span>
+                
+              <br>
+          
+                Provides customer-facing implementation support for SAP B1,
+                actively assisting clients in the deployment of the system and
+                delivering customized reports through Crystal Reports, Excel,
+                and SQL queries to meet their specific needs.
+              </p>
+            </div>
+          </div>
+
+          <!-- <div class="text-warning text-end">
+          <i class="fa fa-angle-double-down" style="font-size: 24px"></i>
+        </div> -->
+        </div>
+        <div class="work-card px-3 py-4 my-3">
+          <div class="row ps-3">
+            <div class="col text-light">
+              <h4>
+                <span class="bg-warning text-black px-2 py-2 lh-lg"
+                  ><strong>SAP/POWERAPPS PROGRAMMER</strong></span
+                >
+                <span class="text-warning"
+                  ><strong>TROYCOR Lighting Corporation</strong></span
+                >
+              </h4>
+              <p>
+                <strong>045 499 0522 - Clark Freeport, Angeles, Pampanga </strong>
+              </p>
+              <p class="pe-2"> <span class="text-warning lh-1">February 2022 to April 2023 (1 year & 2 months)</span>
+                
+              <br>
+              Provides implementation support for SAP B1 including creation of customized reports using Crystal Reports, Excel, and SQL queries. In charge of troubleshooting and acts as a point of contact for BEAS Manufacturing add-on. Provides SAP solutions, integrations, and quality-of-life updates via SAP SDK, DI API on Excel and Vb.Net. Develops tools and programs for process improvement using Power Apps and Sharepoint
+              </p>
+            </div>
+          </div>
+
+          <!-- <div class="text-warning text-end">
+          <i class="fa fa-angle-double-down" style="font-size: 24px"></i>
+        </div> -->
+        </div>
+        <div class="work-card px-3 py-4 my-3">
+          <div class="row ps-3">
+            <div class="col text-light">
+              <h4>
+                <span class="bg-warning text-black px-2 py-2 lh-lg"
+                  ><strong>SAP ADMINISTRATOR/IT OFFICER</strong></span
+                >
+                <span class="text-warning"
+                  ><strong>Fashion Interiors Manufacturing Inc</strong></span
+                >
+              </h4>
+              <p>
+                <strong>045 458 3209 - PEZA Pulung Cacutud Angeles City</strong>
+              </p>
+              <p class="pe-2"> <span class="text-warning lh-1">November 2019 to January 2022 (2 year & 2 months)</span>
+                
+              <br>
+              Responsible for SAP Business One server management, implementation, and support. Creates advance reports using Crystal Reports, Excel and SQL queries. Data migration from old system to SAP and regular data uploads using Data Transfer Workbench Develops systems and semi-automation for peculiar processes like PEZA In and Out liquidation, raw material summary reports for BOC. In charge of day-to-day IT administration - network, CCTV, email, and hardware sourcing and acquisition.
+           
+              </p>
+            </div>
+          </div>
+
+          <!-- <div class="text-warning text-end">
+          <i class="fa fa-angle-double-down" style="font-size: 24px"></i>
+        </div> -->
+        </div>
+        <div class="work-card px-3 py-4 my-3">
+          <div class="row ps-3">
+            <div class="col text-light">
+              <h4>
+                <span class="bg-warning text-black px-2 py-2 lh-lg"
+                  ><strong>EXCEL & SYSTEMS DEVELOPER</strong></span
+                >
+                <span class="text-warning"
+                  ><strong>Shore 360 Inc.</strong></span
+                >
+              </h4>
+              <p>
+                <strong>045 499 3268 - PhilExcel Clark, Angeles City</strong>
+              </p>
+              <p > <span class="text-warning lh-1">January 2019 to October 2019 (10 months)</span>
+                
+              <br>
+              Responsible for developing and maintaining Excel-based applications using VBA. Customize and optimize existing Excel functionalities to enhance usability and performance of the company excel tools. (Solar Builder)
+              </p>
+            </div>
+          </div>
+
+          <!-- <div class="text-warning text-end">
+          <i class="fa fa-angle-double-down" style="font-size: 24px"></i>
+        </div> -->
+        </div>
+        <div class="work-card px-3 py-4 my-3">
+          <div class="row ps-3">
+            <div class="col text-light">
+              <h4>
+                <span class="bg-warning text-black px-2 py-2 lh-lg"
+                  ><strong>SAP ADMINISTRATOR</strong></span
+                >
+                <span class="text-warning"
+                  ><strong>Fashion Interiors Manufacturing Inc.</strong></span
+                >
+              </h4>
+              <p>
+                <strong>045 458 3209 - PEZA Pulung Cacutud Angeles City</strong>
+              </p>
+              <p > <span class="text-warning lh-1">April 2016 to December 2018 (2 years & 8 months)</span>
+                
+              <br>
+              Responsible for SAP Business One server management, implementation, and support.
+              
+              </p>
+            </div>
+          </div>
+
+          <!-- <div class="text-warning text-end">
+          <i class="fa fa-angle-double-down" style="font-size: 24px"></i>
+        </div> -->
+        </div>
+        <div class="work-card px-3 py-4 my-3">
+          <div class="row ps-3">
+            <div class="col text-light">
+              <h4>
+                <span class="bg-warning text-black px-2 py-2 lh-lg"
+                  ><strong>SAP SUPPORT</strong></span
+                >
+                <span class="text-warning"
+                  ><strong>Far East Furniture Marketing Corporation</strong></span
+                >
+              </h4>
+              <p>
+                <strong>Ceased Operations - Bacolor Pampanga</strong>
+              </p>
+              <p > <span class="text-warning lh-1">August 2014 - March 2016 (1 year & 7 months)</span>
+                
+              <br>
+              Responsible for SAP Business One implementation and support.
+              </p>
+            </div>
+          </div>
+
+          <!-- <div class="text-warning text-end">
+          <i class="fa fa-angle-double-down" style="font-size: 24px"></i>
+        </div> -->
+        </div>
+     
+      </div>
+    </section>
+
+
+    <section id="projects">
+      <div class="container text-light px-5">
+        
+        <h3 class="pt-5"><strong>PROJECTS & SAMPLE WORKS</strong></h3>
+        <div class="project-cat">
+          <button class="btn btn-light">All</button>
+          <button class="btn btn-light">Websites</button>
+          <button class="btn btn-light">Integrations</button>
+          <button class="btn btn-light">SAP</button>
+        </div>
+
+        <div class="row row-gap-3">
+
+
+          <div class="col-md-4 mt-2">
+            
+            <div class="card border-dark rounded-0">
+
+              <a
+              href="./images/project/NCR.png"
+              data-lightbox="projects"
+              data-title="">
+              <img
+                src="./Images/project/NCR.png"
+                alt="NCR"
+                class="card-img-top rounded-0"
+              /></a>
+
+              <div class="card-body">
+                <h5 class="card-title text-light">
+                  <strong>Troycor - HVL NCR App</strong>
+                </h5>
+                <p class="text-light lh-sm">
+                  An app created using <span class="text-warning">PowerApps & PowerAutomate</span> to centralize
+                  NCR reports into one database and automate email notifications.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-4 mt-2">
+            
+            <div class="card border-dark rounded-0">
+
+              <a
+              href="./images/project/BARCODE.png"
+              data-lightbox="projects"
+              data-title="">
+              <img
+                src="./Images/project/BARCODE.png"
+                alt="NCR"
+                class="card-img-top rounded-0"
+              /></a>
+
+              <div class="card-body">
+                <h5 class="card-title text-light">
+                  <strong>Troycor Parts Barcoding</strong>
+                </h5>
+                <p class="text-light lh-sm">
+                  An app for creating and recording barcodes for each assembly parts for better tracking of missing items and defects. This is created using <span class="text-warning">VB.net with MSSQL database</span>.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-4 mt-2">
+            
+            <div class="card border-dark rounded-0">
+
+              <a
+              href="./images/project/sales.png"
+              data-lightbox="projects"
+              data-title="">
+              <img
+                src="./Images/project/sales.png"
+                alt="NCR"
+                class="card-img-top rounded-0"
+              /></a>
+
+              <div class="card-body">
+                <h5 class="card-title text-light">
+                  <strong>Sales Analysis Report with dynamic columns</strong>
+                </h5>
+                <p class="text-light lh-sm">
+                  A report utilizing <span class="text-warning">SAP and SQL stored procedure</span> that has dynamic columns based on user input.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-4 mt-2">
+            
+            <div class="card border-dark rounded-0">
+
+              <a
+              href="./images/project/dr.png"
+              data-lightbox="projects"
+              data-title="">
+              <img
+                src="./Images/project/dr.png"
+                alt="NCR"
+                class="card-img-top rounded-0"
+              /></a>
+
+              <div class="card-body">
+                <h5 class="card-title text-light">
+                  <strong>FIMI PEZA DR Generator</strong>
+                </h5>
+                <p class="text-light lh-sm">
+                  An windows application that reads from SAP database to auto create Delivery Notes required for PEZA documentation. <span class="text-warning">VB.net and SQL</span>.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-4 mt-2">
+            
+            <div class="card border-dark rounded-0">
+
+              <a
+              href="./images/project/recut.png"
+              data-lightbox="projects"
+              data-title="">
+              <img
+                src="./Images/project/recut.png"
+                alt="NCR"
+                class="card-img-top rounded-0"
+              /></a>
+
+              <div class="card-body">
+                <h5 class="card-title text-light">
+                  <strong>FIMI SAP Reconfiguration</strong>
+                </h5>
+                <p class="text-light lh-sm">
+                  SAP set-up and implementation for Fashion Interiors. Includes UAT, <span class="text-warning">Blueprinting</span>, Crystal Layouts design and Reporting.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-4 mt-2">
+            
+            <div class="card border-dark rounded-0">
+
+              <a
+              href="./images/project/gam.png"
+              data-lightbox="projects"
+              data-title="">
+              <img
+                src="./Images/project/gam.png"
+                alt="NCR"
+                class="card-img-top rounded-0"
+              /></a>
+
+              <div class="card-body">
+                <h5 class="card-title text-light">
+                  <strong>Gamegi</strong>
+                </h5>
+                <p class="text-light lh-sm">
+                  A gaming tips website using <span class="text-warning">WordPress</span>. It has Google Analytics configured and is running AdSense ads.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-md-4 mt-2">
+            
+            <div class="card border-dark rounded-0">
+
+              <a
+              href="./images/project/FG.png"
+              data-lightbox="projects"
+              data-title="">
+              <img
+                src="./Images/project/fg.png"
+                alt="NCR"
+                class="card-img-top rounded-0"
+              /></a>
+
+              <div class="card-body">
+                <h5 class="card-title text-light">
+                  <strong>Finished Goods Code Generator</strong>
+                </h5>
+                <p class="text-light lh-sm">
+                  An SKU generator using standard SAP functionalities - <span class="text-warning">FMS and UDF</span>. It generate codes based on the raw material components of a finished good.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+       
+         
+    
+        </div>
+      </div>
+    </section>
+
+
+
+<section id="recommendations">
+  
+  <div class="container mt-5">
+    
+    <h4 class="text-light text-center"> <strong>RECOMMENDATIONS</strong></h4>
+      <div class="row px-5">
+        <div class="col-md-4 mt-2 pt-4">
+          <div class="card border-0 text-center bg-dark">
+            <img
+              src="./Images/headshots/dora.jpg"
+              alt="NCR"
+              style="width: 60%"
+              class="rounded-circle mx-auto my-3 "
+            />
+            <!-- https://getbootstrap.com/docs/4.0/content/images/#aligning-images -->
+
+            <div class="card-body bg-warning mx-3 mb-3 pb-1 text-black ">
+              <h5><strong>Dora Sison</strong></h5>
+              <p class="lh-sm"><strong><em>SuperDoraDora</em></strong><br><br>
+               Jun Alden is such a great help to me as a newbie. I experience no hassle and taught me a lot more on setting up my blog and how-to in WordPress. 
+
+                
+               
+              </p>
+
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-2">
+          <div class="card border-0 text-center bg-dark">
+            <img
+              src="./Images/headshots/evelyn.jpg"
+              alt="NCR"
+              style="width: 60%"
+              class="rounded-circle mx-auto my-3 "
+            />
+            <!-- https://getbootstrap.com/docs/4.0/content/images/#aligning-images -->
+
+            <div class="card-body bg-warning mx-3 mb-3 pb-1 text-black ">
+              <h5><strong>Evelyn Naldoza</strong></h5>
+              <p class="lh-sm"><strong><em>Fashion Interiors - Finance Manager</em></strong><br>
+                <br>
+              Jun Alden is a self-made SAP expert. His insatiable quest for knowledge to increase skill set is indeed remarkable- from zero to mastery. As a former colleague, brainstorming with him was always a learning experience. Whenever there is uncertainty on SAP or any IT-related issue and I need to phone-a-friend, without doubt, he is the first guy who comes to mind. Highly recommended with an A+!.
+
+                
+               
+              </p>
+
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mt-2 pt-4">
+          <div class="card border-0 text-center bg-dark">
+            <img
+              src="./Images/headshots/ems.jpeg"
+              alt="NCR"
+              style="width: 60%"
+              class="rounded-circle mx-auto my-3 "
+            />
+            <!-- https://getbootstrap.com/docs/4.0/content/images/#aligning-images -->
+
+            <div class="card-body bg-warning mx-3 mb-3 pb-1 text-black ">
+              <h5><strong>Emily Singian</strong></h5>
+              <p class="lh-sm"><strong><em>Far East Furniture</em></strong><br><br>
+              Jun has been an invaluable asset to our IT department over the past years. His expertise in SAP has significantly contributed to the success of our projects.
+
+                
+               
+              </p>
+
+              
+            </div>
+          </div>
+        </div>
+      
+
+      </div>
+    </div></section>
+    
+    <section id="contact">
+      <div class="container px-5 my-5"><h4 class="text-light ps-5"><strong>Drop me a line!</strong></h4>
+        <div class="form-box text-center text-light mt-5 mx-5 py-5">
+          <h4 class ="contact-details">
+            <i class="fas fa-envelope fa-fw"></i> <a href="mailto:junalden@outlook.com" class="text-decoration-none">junalden@outlook.com</a>
+            <i class="fas fa-mobile fa-fw"></i> <a href="tel:+639539917479"  class="text-decoration-none">09539917479</a>
+        </h4>
+        
+        <form class="form text-start px-5 "> 
+         
+          <h5 class="text-center">or send me a message via this contact form:</h5>
+        
+            <div class="mb-3"><label for="name" class="form-label">Full Name</label>
+              <input class="form-control"  id="name" type="text" placeholder=""></div>
+
+            <div class="mb-3"><label for="email" class="form-label">Email Address</label>
+              <input class="form-control"  id="email" type="email" placeholder=""></div>
+
+            <div class="mb-3"><label for="phone" class="form-label">Phone Number</label>
+              <input class="form-control"  id="phone" type="text" placeholder=""></div>
+
+              <div class="mb-5">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+
+              <div class="d-grid gap-2">
+                <button class="btn btn-warning rounded-1" type="button">Submit</button>
+              
+              </div>         
+      </form>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- DID NOT PUT EXACT SOCIAL LINKS FOR NOW -->
+
+    <footer class="container text-center mt-3 text-light">
+      <div class="social">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://x.com/"target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://www.youtube.com/"target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="https://www.linkedin.com/"target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2024 | Jun Alden Bondoc</p>
+    </footer>
+
+
+
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+    <script>document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.sidebar ul li a');
+  
+      function changeLinkState() {
+          let index = sections.length;
+          //added misaligned scroll section fix
+          const offset = window.innerHeight / 2;
+  
+          // while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
+          while (--index && window.scrollY + offset < sections[index].offsetTop) {}
+
+
+          navLinks.forEach((link) => link.classList.remove('active'));
+          navLinks[index].classList.add('active');
+      }
+  
+      changeLinkState();
+      window.addEventListener('scroll', changeLinkState);
+  });
+
+
+
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+      // <!-- expanding readmore -->
+      // <!-- https://www.w3schools.com/howto/howto_js_read_more.asp -->
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("moreBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }</script>
+
+<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/lightbox.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+      </script>
+
+
+  </body>
+</html>

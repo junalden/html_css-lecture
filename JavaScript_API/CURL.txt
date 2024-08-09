@@ -1,0 +1,30 @@
+https://ai.google.dev/gemini-api/docs/api-key
+https://reqbin.com/curl - TEST CURL HERE
+
+API_KEY="AIzaSyATdOo-sWAQqVPmdaf8nHZvUhmn8Sc3aGw"
+curl -H 'Content-Type: application/json' \
+     -d '{"contents":[
+            {"role": "user",
+              "parts":[{"text": "Give me five subcategories of jazz?"}]}]}' \
+     "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}"
+
+
+
+
+
+https://zolomohan.hashnode.dev/speech-recognition-in-javascript 
+SAMPLE PROJECT
+
+
+
+
+https://stackoverflow.com/questions/14061195/how-to-get-transcript-in-youtube-api-v3
+
+to 
+
+https://github.com/jdepoix/youtube-transcript-api
+
+
+
+
+https://www.youtube.com/watch?v=_gXf9Hi_qnQ

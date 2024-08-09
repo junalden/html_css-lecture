@@ -28,6 +28,11 @@ body {
   font-family: "Roboto", Helvetica, sans-serif;
 }
 
+.container {
+  width: 60%;
+  margin: auto;
+}
+
 /* ---------------------------------------------------------------------- */
 .sidebar {
   position: fixed;
@@ -227,6 +232,8 @@ body {
 /* ---------------------- PROJECTS -------------------------- */
 #projects .project-card {
   background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
 }
 #projects h3 {
   padding: 0.5rem 0.5rem;
@@ -242,9 +249,6 @@ body {
 }
 #projects button {
   margin-right: 0.5rem;
-}
-#projects h2 {
-  margin-top: 4rem;
 }
 
 /* -------------END OF PROJECT SECTION -------------------------- */
@@ -307,6 +311,10 @@ body {
 /* --------------------------contact-------------------------------- */
 #contact {
   margin-bottom: 5rem;
+}
+
+#contact h1 {
+  padding-left: 2rem;
 }
 
 #contact .form {
